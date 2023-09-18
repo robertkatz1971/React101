@@ -6,9 +6,8 @@ const App = () => {
     return (
         <div>
             <h1>Todo List</h1>
-            <Todo />
-            <Todo />
-            <Todo />
+            <Todo title='Do laundry' completed={false}/>
+            <Todo title='Go shopping' completed={true} />
         </div>
         
     )

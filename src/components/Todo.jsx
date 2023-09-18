@@ -1,14 +1,15 @@
-const Todo = () => {
+const Todo = (props) => {
+
+    const {title, completed} = props;
+
     return (
         <div className="row">
             <div className="column">
-                Walk the dog.
+                {title}
             </div>
             <div className="column">
-                <label>
-                    <input type="checkbox" />
-                    Completed
-                </label>
+                <input name="completed" type="checkbox" checked={completed} />
+                <label for="completed">Completed</label>
             </div>
         </div >
     );
